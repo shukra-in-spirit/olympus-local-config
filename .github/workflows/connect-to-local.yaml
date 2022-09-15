@@ -1,1 +1,13 @@
-# test
+name: ssh to local
+
+on:
+  push:
+
+jobs:
+  connect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: attempting to ssh
+        run: |
+          apt-get install sshpass
+          sshpass -p chitra ssh supo@49.205.138.180

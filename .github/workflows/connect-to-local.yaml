@@ -9,5 +9,5 @@ jobs:
     steps:
       - name: attempting to ssh
         run: |
-          apt-get install sshpass
+          sudo apt-get install sshpass
           sshpass -p chitra ssh supo@49.205.138.180
